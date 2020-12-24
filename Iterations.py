@@ -54,3 +54,14 @@ while counter<=50:
 	counter+=1
 else:
 	print('while completed')
+
+
+#Walrus Operator :=
+value='Welcome User'
+
+if((newvalue :=len(value))>0):
+	print(f"charcters lenght is {newvalue}")
+
+while((newvalue :=len(value))>0):
+	print(newvalue);
+	value=value[:-1]
