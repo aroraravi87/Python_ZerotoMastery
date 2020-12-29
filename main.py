@@ -1,49 +1,38 @@
-class InheritMain:
+class User:
     def Sign_In(self):
         print("User Logged In")
 
 
-class User1(InheritMain):
+class Wizard(User):
     # Initalized Methods
-    def __init__(self, name, age):
+    def __init__(self, name, power):
         self.name = name  # attributes
-        self.age = age
+        self.Power = power
 
-    def display(self):
-        print(f"Name is {self.name} and age is {self.age}")
+    def shout(self):
+        print(f"Name is {self.name} and power is {self.power}")
 
 
-class User2(InheritMain):
+class Archer(User):
     # Initalized Methods
-    def __init__(self, name, age):
+    def __init__(self, name, arrows):
         self.name = name  # attributes
-        self.age = age
+        self.arrows = arrows
 
-    def display(self):
-        print(f"Name is {self.name} and age is {self.age}")
+		def check_arrows(self):
+			print(f"Arrows remaining {self.arrows}")
 
-
-class User3(InheritMain):
-    # Initalized Methods
-    def __init__(self, name, age):
-        self.name = name  # attributes
-        self.age = age
-
-    def display(self):
-        print(f"Name is {self.name} and age is {self.age}")
+    def run(self):
+        print(f"Ran method called.")
 
 
-user1 = User1('user1', '20')
+class Pacmen(Wizard,Archer):
+   pass
+
+
+pac = Pacmen('user1', '20')
 print('##################')
-user1.Sign_In()
-user1.display()
+pac.Sign_In()
 
-user2 = User2('user2', '40')
-print('##################')
-user2.Sign_In()
-user2.display()
 
-user3 = User3('user3', '50')
-print('##################')
-user3.Sign_In()
-user3.display()
+
