@@ -2,6 +2,7 @@ Object oriented programming
 
 Encapsulation.
 
+
 class Players:
 
     # Initalized Methods
@@ -17,7 +18,9 @@ player1 = Players('James', '20')
 print('##################')
 player1.display()
 
-#Abstraction
+# Abstraction
+
+
 class Abstraction:
 
     # Initalized Methods
@@ -34,5 +37,5 @@ print('##################')
 player1.display()
 
 
-#abstract count method logic when applied on tuple.
+# abstract count method logic when applied on tuple.
 print(f"count of 1 is {(1,2,4,1,2,1).count(1)}")
