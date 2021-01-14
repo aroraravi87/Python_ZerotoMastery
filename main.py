@@ -1,5 +1,5 @@
 #built in module.
-import random
+from random import random
 import sys
 
 
@@ -13,12 +13,17 @@ from pythonmodules.utilityhelper import utility
 #way 3
 from pythonmodules.shopping.shoppingcart import buy
 
-#if __name__ == "__main__":
+from pythonmodules.guessnumbergame.guessnumber import game
+
+if __name__ == "__main__":
     # print(pythonmodules.utilityhelper.utility.addition(10,20))
     # print(multiply(10, 10))
     # print(utility.divide(20, 10))
     # print(pythonmodules.shopping.shoppingcart.buy('Orange'))
     # print(buy('Apple'))
+
+    #Guess the number 
+    game()
 
 ##print(dir(random))
 # print(random.random())
@@ -33,3 +38,7 @@ from pythonmodules.shopping.shoppingcart import buy
 #print(dir(sys))
 
 #print(sys.argv)
+
+
+
+
