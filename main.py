@@ -1,8 +1,24 @@
 #File I/O
-from pythonfileIO import file
+    #from pythonfileIO import file
 
-#file.writefilecontent()
+#import regularexp module.
+    #from Pythonbasics import regularexp
+    #file.writefilecontent()
+    #file.readfilecontent()
+    #file.translatefilecontent()
 
-#file.readfilecontent()
+#Regular Expression in python
+    #print(regularexp.checkstr())
+    #print(regularexp.checkstr_regex())
+    #regularexp.check_emailexp()
+    #regularexp.check_passwordexp()
 
-file.translatefilecontent()
+#python testing
+def addition(num1,num2):
+    return num1 + num2
+    
+def multiply(num1,num2):
+    return num1 * num2
+
+def divide(num1,num2):
+    return num1/num2
