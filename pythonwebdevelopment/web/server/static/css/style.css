@@ -1,0 +1,11 @@
+body{
+    background-image: url('/static/images/background.jpg');
+    background-color: #ccc;
+    font-variant: normal;
+    font-family: cursive;
+    font-size: 30px;
+    color:#ccc;
+    font-weight: bold;
+    margin: 20px,auto;
+
+}
