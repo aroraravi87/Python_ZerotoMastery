@@ -55,6 +55,6 @@ Setup the flask server
 
 
 Note:
-    Flask you jinja to evaluate the expression like {{4+5}}= 9
+    Flask use jinja to evaluate the expression like {{4+5}}= 9
     #flask framework use for small application.
     #django framework  for buld complex application.
