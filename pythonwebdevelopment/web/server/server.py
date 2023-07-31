@@ -34,3 +34,5 @@ def write_to_csv(data):
         csv_writer = csv.writer(csvfile, delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
 
+if __name__ == '__main__':
+    app.run()
