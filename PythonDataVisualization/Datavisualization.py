@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from matplotlib.widgets import TextBox
 import numpy as np
 import pandas as pd
 
@@ -67,12 +68,31 @@ def plot4():
     plt.show()
 
 
-
     
+
+fig,ax= plt.subplots()
+fig.subplots_adjust(bottom=0.2)
+x=np.arange(-20,20,0.001)
+line,=ax.plot(x,np.zeros_like(x),lw=2)
+    
+def submit(expression):
+    ydata=eval(expression)
+    line.set_ydata(ydata)
+    ax.relim()
+    ax.autoscale_view()
+    plt.draw()
+
+text_box=fig.add_axes([0.1,0.05,0.8,0.075])
+text_box=TextBox(text_box,'Evaluate',textalignment='center')
+text_box.on_submit(submit)
+text_box.set_val("x+20*np.sin(x)")
+    
+plt.show()
 ##########Main Calling
 
 #plot1()
 #plot2()
 #plot3()
-plot4()
+#plot4()
+
 
